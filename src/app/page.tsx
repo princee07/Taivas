@@ -1,5 +1,11 @@
 import InfoBar from "../components/InfoBar";
+import AboutSection from "../components/AboutSection";
+import OurEvents from "../components/OurEvents";
+import SpecialMoment from "../components/SpecialMoment";
+import SpecialHighlights from "../components/SpecialHighlights";
+import Footer from "../components/layout/Footer";
 
+import BrandNameSection from "../components/BrandNameSection";
 export default function Home() {
   return (
     <>
@@ -37,6 +43,15 @@ export default function Home() {
         </div>
       </section>
       <InfoBar />
+      {/* About section with animated stacked images */}
+      <AboutSection />
+      <OurEvents />
+
+      <SpecialMoment />
+      <SpecialHighlights />
+    
+      <Footer />
+      <BrandNameSection />
     </>
   );
 }
