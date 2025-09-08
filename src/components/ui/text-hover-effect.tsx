@@ -109,12 +109,14 @@ export const TextHoverEffect = ({
         className={`fill-transparent stroke-neutral-200 font-[helvetica] font-bold dark:stroke-neutral-800 ${className ?? 'text-[5rem]'}`}
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
-          strokeDashoffset: 0,
+          strokeDashoffset: [1000, 0],
           strokeDasharray: 1000,
         }}
         transition={{
           duration: 4,
           ease: "easeInOut",
+          repeat: Infinity,
+          repeatType: "loop",
         }}
       >
         {text}
