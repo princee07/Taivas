@@ -1,4 +1,18 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap");
+
+/* Hide scrollbar for all browsers */
+html, body {
+  /* Already has overflow-x: hidden; */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+   overflow-x: hidden;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
 @import "tailwindcss";
 @import "tw-animate-css";
 

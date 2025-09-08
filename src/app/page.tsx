@@ -9,14 +9,14 @@ import BrandNameSection from "../components/BrandNameSection";
 export default function Home() {
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[120vh] w-full overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-[120vh] w-full max-w-full overflow-x-hidden overflow-hidden">
         {/* Video background placeholder, replace src with your video file */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0 brightness-[.45]"
+          className="absolute inset-0 w-full h-full max-w-full object-cover z-0 brightness-[.45] overflow-x-hidden"
         >
           <source src="video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -49,7 +49,7 @@ export default function Home() {
 
       <SpecialMoment />
       <SpecialHighlights />
-    
+
       <Footer />
       <BrandNameSection />
     </>
